@@ -1,3 +1,3 @@
 # IBM-Project-1354-1658385745
 News Tracker Application
-# [use case.pdf](https://github.com/IBM-EPBL/IBM-Project-1354-1658385745/files/9794618/use.case.pdf)
+<img src="https://user-images.githubusercontent.com/106462938/196038216-7c121148-c4f6-485a-8fc8-14d2c2ea78ac.png"/>
