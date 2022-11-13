@@ -1,0 +1,21 @@
+body{
+background-color:orange;
+text-align: center;
+}
+h1{
+font-style: italic;
+size: 30px;
+}
+p{
+font-size: 20px;
+}
+
+.blue{
+color: blue;
+}
+.red{
+color: red;
+}
+.green{
+color: green;
+}
