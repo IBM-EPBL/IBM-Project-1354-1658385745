@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.body
+{
+  background-image: url('https://ibm-news-tracker.s3.jp-tok.cloud-object-storage.appdomain.cloud/login-signup-backgroud-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1
+{
+  font-family: 'Merriweather', sans-serif;
+  font-size: 15px;
+}
+
+h4
+{
+  font-family: Pacifico, cursive;
+}
+
+.on-screen 
+{
+  width: 300px;
+  padding: 2% 0 0;
+  margin: auto;
+}
+
+.form 
+{
+  position: absolute;
+  border-radius: 25px;
+  right:  40px;
+  border: 5px solid white;
+  z-index: 1;
+  background: #48c9b0;
+  max-width: 360px;
+  margin: 0 auto 80px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input 
+{
+  font-family: FontAwesome, "Pacifico", cursive;
+  outline: 0;
+  background: #f2f2f2;
+  width: 80%;
+  height: 40px;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius:10px;  
+}
+
+.form button 
+{
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  outline: 0;
+  background: #17a588;
+  width: 50%;
+  border: 5;
+  border-radius:15px;
+  margin: 0px 0px 8px;
+  padding: 15px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form button:hover,.form button:focus
+{
+  background: #148f77;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.form button:active
+{
+  transform: translateY(2px);
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+body 
+{
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+@media(max-width: 1000px)
+{
+  .body
+  {
+    background: #48c9b0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .on-screen 
+  {
+    width: 100%;
+    padding: 0 0 0;
+    margin: auto;
+  }
+
+  .form 
+  {
+    position: absolute;
+    border-radius: 0px;
+    right:  0px;
+    border: 0px solid white;
+    z-index: 1;
+    background: #48c9b0;
+    max-width: 100%;
+    margin: 0 auto 0px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0), 0 0px 5px 0 rgba(0, 0, 0, 0);
+  }
+
+  .form input 
+  {
+    font-family: FontAwesome,'Merriweather', serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 280px;
+    height: 50px;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius:10px;  
+  }
+
+  h4
+  {
+    font-family: Merriweather, serif;
+    font-size: 14px;
+  }
+
+  .form button 
+  {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    outline: 0;
+    background: #17a588;
+    width: 280px;
+    border: 5;
+    border-radius:15px;
+    margin: 0px 0px 8px;
+    padding: 15px;
+    color: #FFFFFF;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+ .container
+ {
+    max-width: 100%;
+  }
+
+  @media(max-width: 459px)
+  {
+  .container .content .category
+    {
+      flex-direction: column;
+    }
+}
