@@ -1,0 +1,87 @@
+<html>
+
+  <head>
+
+    <title>NEW ACCOUNT</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='pages.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+        <script>
+
+      window.watsonAssistantChatOptions = 
+      {
+        integrationID: "78eea96f-f7bf-4a38-bd83-3eac507aacb7", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "a57bbab3-1d2e-4714-ae9b-c3c2c507ef41", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+
+      setTimeout(function()
+      {
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+
+    </script>
+
+  </head>
+
+  <body class="body">
+  
+  <div class="on-screen">
+
+    <div class="form">
+
+      <form action="/login" method="POST">
+
+        <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_3ghvm6sn.json"  speed="1"  style="justify-content: center;" loop  autoplay></lottie-player><br>
+
+        <center><h4>Your account has been successfully registered and the login credentials were shared with you to the registered email address.</h4><br><center>
+
+        <input name="username" type="text" placeholder="&#xf007;  Username" required />
+
+        <input name="password" type="password" id="password" placeholder="&#xf023;  Password" required/><br>
+
+        <i class="fas fa-eye" onclick="show()"></i><br><br>
+
+        <button type="submit">LOGIN</button>
+
+        <p class="message"></p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    function show()
+    {
+      var password = document.getElementById("password");
+      var icon = document.querySelector(".fas")
+      if(password.type === "password")
+      {
+        password.type = "text";
+      }
+      else
+      {
+        password.type = "password";
+      }
+    };
+    
+  </script>
+
+  </body>
+
+</html>
