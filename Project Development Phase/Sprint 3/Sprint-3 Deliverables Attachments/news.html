@@ -1,0 +1,84 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>CAD-NEWSTRACKER</title>
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='news.css') }}">
+
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+	    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap" rel="stylesheet">
+
+	    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+            <script>
+
+      window.watsonAssistantChatOptions = 
+      {
+        integrationID: "78eea96f-f7bf-4a38-bd83-3eac507aacb7", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "a57bbab3-1d2e-4714-ae9b-c3c2c507ef41", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+
+      setTimeout(function()
+      {
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+
+    </script>
+
+    </head>
+
+    <body>
+
+    <div class="form">
+
+        <form>
+
+            <br><br>
+
+            <button style="margin-right:-2%;" type="button">CAD-NEWSTRACKER</button>
+
+            <button style="margin-left:40%;" type="button" onclick="window.location.href='/logout'">LOGOUT</button>
+
+            <button type="button" onclick="window.location.href='/dashboard'">DASHBOARD</button>
+
+        </form>
+
+	 </div>
+
+     <br><br><br><br><br><br>
+
+        {% for news, author,publishedAt, desc,img,content,url in context %}
+
+ 	       <br>
+
+ 	       <img style="width: 100%; height: 10px; align-content: center;"src="https://ibm-news-tracker.s3.jp-tok.cloud-object-storage.appdomain.cloud/the_line.png"><br>
+
+ 	       <center><h1>{{news}}</h1></center><br><br>
+
+           <img style="height: 500px; width: 100%" src="{{img}}" alt=""><br>
+   
+           <h2>Published Time: {{publishedAt}}</h2>
+
+           <h2>Author: {{author}}</h2><br>
+
+           <h3>Description: {{desc}}</h3><br>
+
+           <h3>Content: {{content}}<a href={{url}} target="blank">Read More...</a></h3><br>
+
+        {% endfor %} 
+
+    </body>
+
+</html>
