@@ -1,0 +1,4 @@
+flask
+flask_mail
+newsapi-python
+ibm_db

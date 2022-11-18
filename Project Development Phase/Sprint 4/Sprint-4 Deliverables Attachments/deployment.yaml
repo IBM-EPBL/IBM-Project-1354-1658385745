@@ -1,0 +1,20 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: cad-newstracker-deployment
+ spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: newstracker
+   template:
+     metadata:
+       labels:
+         app: newstracker
+     spec:
+       containers:
+       - name: newstracker
+         image: us.icr.io/newstracker/cad
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 5000
