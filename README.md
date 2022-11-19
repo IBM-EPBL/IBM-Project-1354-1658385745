@@ -4,4 +4,4 @@
 
 # Project Demo link: To Be Updated
 
-<img src="https://user-images.githubusercontent.com/106462938/196038216-7c121148-c4f6-485a-8fc8-14d2c2ea78ac.png"/>
+<img src="https://github.com/IBM-EPBL/IBM-Project-1354-1658385745/blob/e2aaed2c8859a717b2038ba9fc1fb952d12813a0/Final%20Deliverables/Snapshots/snapshot%20(23).png"/>
