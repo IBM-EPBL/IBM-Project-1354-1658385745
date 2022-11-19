@@ -1,4 +1,6 @@
 # News Tracker Application
+Cloud Application Development
+Team ID: PNT2022TMID44401
 
 # Project website link: https://newstracker.ml
 
